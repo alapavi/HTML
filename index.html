@@ -1,26 +1,129 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-<title>WEB</title>
+  <title>Bootstrap 5 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aab;
+  }
+  </style>
 </head>
-<body style="background-color:tomato;">
- <img src="
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS79EhjRaoeTDzvr579dQgIwrjgsRd8MgvQlA&s.jpg
-" width="460" height="345">
+<body>
 
-<h1>Fundamentals of Computing</h1>
+<div class="p-5 bt-primary text-black text-center">
+  <h1>Funamentals of Computing</h1>
+  <p>Below are the topics this website contains.</p> 
+</div>
 
 
-<p style="font-size : 300%;"> <pre>
-This course is an introduction to the fundamentals of Computer Science that will provide students with a foundation for future courses in Computer Science.
-The course is a broad survey of the discipline through topics that allow students to understand the capabilities of computer systems in terms of: the 
-computer architecture; operating systems and computer networks; software and software development; data organization and visualization; and the potential 
-of computing machines. <pre> </p>
- 
- 
- 
- 
+
+
+
+
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+     <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+      
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.wallpaperscraft.com/image/single/code_programming_monitor_209719_1600x900.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Project</h3>
+      </div>
+    </div>
+    
+    
+    <div class="carousel-item">
+      <img src="https://engineering.princeton.edu/wp-content/uploads/2025/09/airplane_cube_v4d-copy-scaled.jpg" alt="Chicago" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Concepts</h3>
+        </div> 
+    </div>
+    
+     <div class="carousel-item">
+      <img src="https://www.michalsons.com/wp-content/uploads/2009/07/datadase-e1564732052315.jpg" alt="Chicago" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Data-Bases</h3>
+        </div> 
+    </div>
+    
+     <div class="carousel-item">
+      <img src="https://eqraz.com/documents/2021/09/Our-Documents-Two-Pens-and-hands-1600x900.jpg" alt="Chicago" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Documentation</h3>
+      </div> 
+    </div>
+    
+    
+    <div class="carousel-item">
+      <img src="https://cdn-employer-wp.arc.dev/wp-content/uploads/2022/02/keep-developer-team-happy.jpg" alt="New York" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Dev Team</h3>
+      </div>  
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container-fluid mt-3">
+
+  <h3>About the course </h3>
+  
+  <p>“Welcome to Computer Science : where we peek inside the computer’s brain, learn how it gossips with other computers, figure out how to boss it around with code, and see how it shows off data like a nerdy Picasso. Think of it as a behind-the-scenes tour of your laptop’s secret life.”.</p>
+</div>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>Footer</p>
+</div>
+
  
 <a href="C:\Users\2025162991\Desktop\FOC final project">p1</a><br>
 <a href="C:\Users\2025162991\Desktop\FOC final project">p2</a><br>
@@ -33,3 +136,4 @@ of computing machines. <pre> </p>
 </body>
 
 </html>
+
