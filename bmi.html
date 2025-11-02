@@ -53,4 +53,34 @@
     const weight = parseFloat(document.getElementById('weight').value);
 
     if(height > 0 && weight > 0){
-      const bmi
+      const bmi = (weight / (height * height)).toFixed(2);
+      let statement = '';
+      let colorClass = '';
+
+      if(bmi < 18.5) {
+        statement = 'Underweight';
+        colorClass = 'text-primary'; // blue
+      } else if(bmi < 25) {
+        statement = 'Normal weight';
+        colorClass = 'text-success'; // green
+      } else if(bmi < 30) {
+        statement = 'Overweight';
+        colorClass = 'text-warning'; // orange
+      } else {
+        statement = 'Obese';
+        colorClass = 'text-danger'; // red
+      }
+
+      document.getElementById('bmiResult').textContent = bmi;
+      const bmiStatementEl = document.getElementById('bmiStatement');
+      bmiStatementEl.textContent = statement;
+      bmiStatementEl.className = colorClass; // apply color class
+
+    } else {
+      alert('Please enter valid height and weight.');
+    }
+  });
+</script>
+
+</body>
+</html>
