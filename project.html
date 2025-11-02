@@ -19,7 +19,7 @@
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
-    float: left; /* Added to make it inline with image */
+    float: left; /* keeps sidebar on the left */
   }
 
   .sidenav li a {
@@ -39,14 +39,19 @@
     color: white;
   }
 
-  .content img {
-    margin-left: 20px; /* small spacing beside sidebar */
-    display: block;
-    width: calc(100% - 220px); /* fits nicely beside the sidebar */
-    float: left; /* Added to keep it inline */
+  /* make image appear beside sidebar */
+  .content {
+    float: left; /* aligns beside sidebar */
+    margin-left: 20px; /* spacing between sidebar and image */
   }
 
-  /* clears floats for bottom navbar */
+  .content img {
+    display: block;
+    width: 1000px; /* fixed width so it fits beside sidebar */
+    height: auto;
+  }
+
+  /* clear float for bottom navbar */
   nav {
     clear: both;
   }
@@ -68,8 +73,9 @@
   <li><a href="bmi.html">BMI - Calculator</a></li>
 </ul>
 
+<!-- IMAGE INLINE WITH SIDEBAR -->
 <div class="content">
-  <img src="projectpage.png" class="d-block rounded" style="width:100%">
+  <img src="projectpage.png" class="d-block rounded" alt="Projects Page">
 </div>
 
 <p></p>
