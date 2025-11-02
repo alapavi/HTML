@@ -19,6 +19,7 @@
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
+    float: left; /* Added to make it inline with image */
   }
 
   .sidenav li a {
@@ -38,14 +39,17 @@
     color: white;
   }
 
- .content img {
-    margin-left: 210px; /* pushes image to the right of sidebar */
+  .content img {
+    margin-left: 20px; /* small spacing beside sidebar */
     display: block;
-    width: calc(100% - 210px); /* keeps it responsive beside sidebar */
+    width: calc(100% - 220px); /* fits nicely beside the sidebar */
+    float: left; /* Added to keep it inline */
   }
 
-
-    
+  /* clears floats for bottom navbar */
+  nav {
+    clear: both;
+  }
   </style>
 </head>
 <body>
@@ -105,7 +109,3 @@
 
 </body>
 </html>
-
-
-
-
