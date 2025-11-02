@@ -11,6 +11,32 @@
     height: 200px;
     background: #aaa;
   }
+
+  /* SIDE NAVBAR STYLES */
+  .sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+
+  .sidenav li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  .sidenav li a.active {
+    background-color: #520a18;
+    color: white;
+  }
+
+  .sidenav li a:hover:not(.active) {
+    background-color: #9e4d4d;
+    color: white;
+  }
   </style>
 </head>
 <body>
@@ -18,76 +44,35 @@
 <div class="p-5 bg-secondary text-black text-center rounded">
   <h1>Projects</h1>
 </div>
-   
-   <p></p>
-      <h5>All projects are located here</h5>
-      
-     
-  <style>   
-     
-     ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-}
 
-li a {
-  display: block;
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-}
+<p></p>
+<h5>All projects are located here</h5>
 
-li a.active {
-  background-color:#520a18;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #9e4d4d;
-  color: white;
-}
-</style>
-</head>
-<body>
-
-<ul>
-  <li><a class="active" href=logicgates.html">Logic Gates</a></li>
+<!-- SIDE NAV -->
+<ul class="sidenav">
+  <li><a class="active" href="logicgates.html">Logic Gates</a></li>
   <li><a href="flipflop.html">Flip Flop</a></li>
   <li><a href="bmi.html">BMI - Calculator</a></li>
-</ul>   
-</body>
+</ul>
 
 <div class="content">
-<img src="projectpage.png" class="d-block rounded" style="width:100%"></div>
+  <img src="projectpage.png" class="d-block rounded" style="width:100%">
 </div>
 
+<p></p>
 
-<p> 
-</p>
-
-
-
-
-
-
-
+<!-- BOTTOM NAVBAR -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded">
   <div class="container-fluid">
     <ul class="navbar-nav">
-      
       
       <li class="nav-item">
         <a class="nav-link active" href="index.html">Course</a>
       </li>
       
-      
       <li class="nav-item">
         <a class="nav-link" href="project.html">Projects</a>
       </li>
-      
       
       <li class="nav-item">
         <a class="nav-link" href="concepts.html">Concepts</a>
@@ -97,22 +82,17 @@ li a:hover:not(.active) {
         <a class="nav-link" href="databases.html">Databases</a>
       </li>
       
-      
       <li class="nav-item">
         <a class="nav-link" href="documentation.html">Documentation</a>
       </li>
       
-      
       <li class="nav-item">
         <a class="nav-link" href="dev.html">Dev Team</a>
       </li>
-      
-      
 
     </ul>
   </div>
 </nav>
-
 
 </body>
 </html>
