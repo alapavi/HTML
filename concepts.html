@@ -8,12 +8,25 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <style>
 
+body
+{
+background-image: url('defaultbackgroundimage.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center; 
+}
+
+
 .heading
 {
+text-align: center;
+text-shadow: 2px 2px yellow;
 padding: 20px;
-display: flex;
-justify-content: center;
-}
+margin: auto;
+margin: 10px;
+font-family: Courier New, monospace;
+font-weight: bold;
+color: black;}
 
 .image
 {
@@ -22,24 +35,62 @@ justify-content: center;
 align-items: center;
 margin:auto;
 margin:20px;
-background-color: lightblue;
 padding:20px;
 border-radius: 7px;
-border-width: 2px;
+box-shadow: 2px 2px yellow;
+}
+
+.text
+{
+padding: 20px;
+font-family:Courier New, monospace;
+text-align: center;
+margin: auto;
+margin: 20px;
+color: white;
+
 }
 
   
+.button-container
+{
+padding: 10px;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+border:0px solid black;
+margin: 20px;
+text-align: center;
+}
+
+.button-group span
+{ display: inline-block; }
+
+.button-group
+{ margin-top: auto;}
+
+  
+
 .button
-{ background-color: #6A99AB;
-font-size: 20px;
+{
+padding:7px;
+border: 0px;
 border-radius: 10px;
-postion:fixed; bottom: 0; }
+box-shadow: 2px 2px yellow;
+color: white;
+background-color: transparent;
+postion:fixed;
+bottom: 0; 
+font-family: Courier New, monospace;
+}
 
 .container
 {display: flex;
 flex-direction: column;
 height: 100%;
-text-align: center;}
+text-align: center;
+}
 
 .button-group span
 { display: inline-block;}
@@ -58,32 +109,32 @@ text-align: center;}
 
 
 <div class="image">
-<a href="https://www.canva.com/design/DAG3u8UIoBE/xwUNs_Ar6rAzVZi5QOaBow/edit"><img src="graphics.png" alt="database" width="515" height="290" ></a>
+<a href="https://www.canva.com/design/DAG3u8UIoBE/xwUNs_Ar6rAzVZi5QOaBow/edit"><img src="graphics.png" alt="database" width="100%"></a>
+</div>
+
+<div class="text">
+<h3>Click on the image above for presentation.</h3>
 </div>
 
 
-<p>Click on the image above for presentation.</p>
+<div class="button-container">
+<div class="button-group">
 
-
- <div class= "container" > 
- <div class= "button-group">
- 
 <button  class="button" onclick= "document.location='index.html'">Course</button>
+ 
+<button   class="button" onclick= "document.location='project.html'">Projects</button>
 
-<button  class="button" onclick= "document.location='project.html'">Projects</button>
-
-<button  class="button" onclick= "document.location='concepts.html'">Concepts</button>
+<button   class="button" onclick= "document.location='concepts.html'">Concepts</button>
 
 <button  class="button" onclick= "document.location='databases.html'">Data-Bases</button>
 
-<button  class="button" onclick= "document.location='documentation.html'">Documentation</button>
+<button   class="button" onclick= "document.location='documentation.html'">Documentation</button>
 
-<button  class="button" onclick= "document.location='dev.html'">Dev Team</button>
+<button   class="button" onclick= "document.location='dev.html'">Dev Team</button>
 
- </div>
- </div>
- 
-   
+</div>
+</div>
+
 
 
 
@@ -91,4 +142,3 @@ text-align: center;}
 
 </body>
 </html>
-
