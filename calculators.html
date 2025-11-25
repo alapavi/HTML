@@ -204,11 +204,6 @@ font-family: Courier New, monospace;
     </script>
     
     
-    
-    
-    
-    
-    
 <div class="container">
 
 <div class="sub-heading">
@@ -241,23 +236,7 @@ font-family: Courier New, monospace;
     </script>
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
 <div class="container">
 
 <div class="sub-heading">
@@ -266,27 +245,36 @@ font-family: Courier New, monospace;
  
 <div class="group">
 
-<input type="number" id="n1" placeholder="Enter Number 1" class="small-container">
+<input type="number" id="divn1" placeholder="Enter Number 1" class="small-container">
  
 
- <input type="number" id="n2" placeholder="Enter Number 2" class="small-container"> 
+ <input type="number" id="divn2" placeholder="Enter Number 2" class="small-container"> 
  
  <p> </p>
- <button  onclick="getSum()" class="calculator-button">Calculate Sum</button>
+ <button  onclick="getDiv()" class="calculator-button">Calculate Division</button>
     
- <p> Your Answer is : <span id="result"></span> </p>
+ <p> Your Answer is : <span id="result4"></span> </p>
  
  </div>
  </div>
  
 
     <script>
-        function getSum() {
-            let n1 = parseFloat(document.getElementById('n1').value);
-            let n2 = parseFloat(document.getElementById('n2').value);
-            let sum = n1 + n2;
-            document.getElementById('result').textContent = sum;    
-        }
+        function getDiv() {
+            let divn1 = parseFloat(document.getElementById('divn1').value);
+            let divn2 = parseFloat(document.getElementById('divn2').value);
+            let div = divn1 / divn2;
+            let msg= "CANNOT DIVIDE BY ZERO";  
+            document.getElementById('result4').textContent = div;
+             
+             
+             if (divn2 === 0)
+            {document.getElementById('result4').textContent = msg;}
+            
+        
+            }
+           
+       
     </script>
 
 <div class="text">
@@ -294,23 +282,6 @@ font-family: Courier New, monospace;
 </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <div class="button-container">
