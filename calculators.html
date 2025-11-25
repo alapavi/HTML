@@ -83,7 +83,6 @@ margin: 10px;
 margin: auto;
 border: 1px solid tomato;
 border-radius: 25px;
-margin: 20px;
 text-align: center;
 background-color: darkcyan;
 }
@@ -152,6 +151,165 @@ font-family: Courier New, monospace;
             document.getElementById('result').textContent = sum;    
         }
     </script>
+    
+<div class="container">
+
+<div class="sub-heading">
+<h2>Difference Calculator</h2>
+</div>
+ 
+<div class="group">
+
+<input type="number" id="dn1" placeholder="Enter Number 1" class="small-container">
+ <input type="number" id="dn2" placeholder="Enter Number 2" class="small-container"> 
+ 
+ <p> </p>
+ <button  onclick="getDiff()" class="calculator-button">Calculate Difference</button>
+    
+ <p> Your Answer is : <span id="result2"></span> </p>
+ 
+ </div>
+ </div>
+ 
+
+    <script>
+        function getDiff() {
+            let dn1 = parseFloat(document.getElementById('dn1').value);
+            let dn2 = parseFloat(document.getElementById('dn2').value);
+            let diff = dn1 - dn2;
+            document.getElementById('result2').textContent = diff;    
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+    
+<div class="container">
+
+<div class="sub-heading">
+<h2>Product Calculator</h2>
+</div>
+ 
+<div class="group">
+
+<input type="number" id="mn1" placeholder="Enter Number 1" class="small-container">
+ 
+
+ <input type="number" id="mn2" placeholder="Enter Number 2" class="small-container"> 
+ 
+ <p> </p>
+ <button  onclick="getPro()" class="calculator-button">Calculate Product</button>
+    
+ <p> Your Answer is : <span id="result3"></span> </p>
+ 
+ </div>
+ </div>
+ 
+
+    <script>
+        function getPro() {
+            let mn1 = parseFloat(document.getElementById('mn1').value);
+            let mn2 = parseFloat(document.getElementById('mn2').value);
+            let pro = mn1 * mn2;
+            document.getElementById('result3').textContent = pro;    
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div class="container">
+
+<div class="sub-heading">
+<h2>Sum Calculator</h2>
+</div>
+ 
+<div class="group">
+
+<input type="number" id="n1" placeholder="Enter Number 1" class="small-container">
+ 
+
+ <input type="number" id="n2" placeholder="Enter Number 2" class="small-container"> 
+ 
+ <p> </p>
+ <button  onclick="getSum()" class="calculator-button">Calculate Sum</button>
+    
+ <p> Your Answer is : <span id="result"></span> </p>
+ 
+ </div>
+ </div>
+ 
+
+    <script>
+        function getSum() {
+            let n1 = parseFloat(document.getElementById('n1').value);
+            let n2 = parseFloat(document.getElementById('n2').value);
+            let sum = n1 + n2;
+            document.getElementById('result').textContent = sum;    
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div class="container">
+
+<div class="sub-heading">
+<h2>Sum Calculator</h2>
+</div>
+ 
+<div class="group">
+
+<input type="number" id="n1" placeholder="Enter Number 1" class="small-container">
+ 
+
+ <input type="number" id="n2" placeholder="Enter Number 2" class="small-container"> 
+ 
+ <p> </p>
+ <button  onclick="getSum()" class="calculator-button">Calculate Sum</button>
+    
+ <p> Your Answer is : <span id="result"></span> </p>
+ 
+ </div>
+ </div>
+ 
+
+    <script>
+        function getSum() {
+            let n1 = parseFloat(document.getElementById('n1').value);
+            let n2 = parseFloat(document.getElementById('n2').value);
+            let sum = n1 + n2;
+            document.getElementById('result').textContent = sum;    
+        }
+    </script>
+    
+    
    
 
 
